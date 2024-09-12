@@ -91,7 +91,7 @@ const ProductList = ({ isLoggedIn }) => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-lg rounded-lg overflow-hidden">
+    <div className="w-full max-w-4xl mx-auto mt-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-lg rounded-lg overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
         <h2 className="text-xl font-semibold">Top Products Launching Today</h2>
         <button 
