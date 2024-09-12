@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Team = () => {
   const teamMembers = [
@@ -14,7 +15,7 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg border border-purple-500 text-center transform transition duration-500 hover:scale-105">
-              <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500" />
+              <Image src={member.image} alt={member.name} className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-500" />
               <h3 className="text-xl font-semibold mb-2 text-purple-400">{member.name}</h3>
               <p className="text-gray-400">{member.role}</p>
             </div>
