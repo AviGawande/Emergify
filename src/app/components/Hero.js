@@ -12,7 +12,7 @@ const Hero = () => {
         To Solve the problem of newly emerging solana products where its very hard to keep them all on same platform. 
         </p>
         <button className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
-          <span>Create a product for free</span>
+          <span>Register for free</span>
           <ArrowRight size={20} />
         </button>
         {/* <div className="mt-16 bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl max-w-4xl mx-auto border border-gray-700">

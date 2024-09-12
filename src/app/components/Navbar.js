@@ -32,7 +32,7 @@ const Navbar = () => {
                 <span>Sign up</span>
               </button>
               <button className="animated-gradient-button">
-                <span>Create a product</span>
+                <span>List Product</span>
               </button>
             </div>
           </div>
