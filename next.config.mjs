@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
+  swcMinify: true,
   async headers() {
     return [
       {
@@ -19,4 +17,4 @@ const nextConfig = {
   }
 }
 
-export default nextConfig
+module.exports = nextConfig

@@ -15,6 +15,7 @@ const handler = NextAuth({
   ],
   pages: {
     signIn: '/auth/signin',
+    error: '/auth/error', // Add this line
   },
   callbacks: {
     async redirect({ url, baseUrl }) {
@@ -23,7 +24,6 @@ const handler = NextAuth({
       return baseUrl
     }
   },
-  secret: process.env.NEXTAUTH_SECRET,
 });
 
 export { handler as GET, handler as POST };
