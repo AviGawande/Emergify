@@ -13,17 +13,7 @@ const handler = NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  pages: {
-    signIn: '/auth/signin',
-    error: '/auth/error', // Add this line
-  },
-  callbacks: {
-    async redirect({ url, baseUrl }) {
-      if (url.startsWith("/")) return `${baseUrl}${url}`
-      else if (new URL(url).origin === baseUrl) return url
-      return baseUrl
-    }
-  },
+  // other configurations...
 });
 
 export { handler as GET, handler as POST };
