@@ -1,6 +1,8 @@
 'use client';
-import React, { useState } from 'react';
+
+import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 const NavLink = ({ href, children }) => (
@@ -10,7 +12,12 @@ const NavLink = ({ href, children }) => (
 );
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const router = useRouter();
+
+  const handleSignUp = () => {
+    router.push('/auth/signin');
+  };
 
   return (
     <nav className="fixed w-full z-50 bg-gray-900">
@@ -27,8 +34,7 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-4">
               <NavLink href="#features">Launches</NavLink>
               <NavLink href="#pricing">Products</NavLink>
-              {/* Sign up button with gradient and glare effect */}
-              <button className="animated-gradient-button">
+              <button className="animated-gradient-button" onClick={handleSignUp}>
                 <span>Sign up</span>
               </button>
               <button className="animated-gradient-button">
@@ -51,7 +57,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900">
             <NavLink href="#features">Launches</NavLink>
             <NavLink href="#pricing">Products</NavLink>
-            <button className="animated-gradient-button w-full text-left">
+            <button className="animated-gradient-button w-full text-left" onClick={handleSignUp}>
               <span>Sign up</span>
             </button>
             <button className="animated-gradient-button w-full text-left">

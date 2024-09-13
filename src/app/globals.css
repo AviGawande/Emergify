@@ -189,3 +189,11 @@ body {
   transform: translateX(100%);
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-open > *:not(.fixed) {
+  filter: blur(20px);
+  transition: filter 0.3s ease-out;
+}
