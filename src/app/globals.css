@@ -197,3 +197,23 @@ body {
   filter: blur(20px);
   transition: filter 0.3s ease-out;
 }
+
+/* Override default Solana wallet button styles */
+.wallet-adapter-button {
+  background: none !important;
+  border: none !important;
+  color: white !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.wallet-adapter-button-trigger {
+  background: none !important;
+}
+
+/* Ensure the wallet button text is visible */
+.wallet-adapter-button-start-icon,
+.wallet-adapter-button-end-icon,
+.wallet-adapter-button-text {
+  color: white !important;
+}
